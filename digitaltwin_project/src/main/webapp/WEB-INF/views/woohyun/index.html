@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cesiumjs.org/releases/1.79.1/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesiumjs.org/releases/1.79.1/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+  <script>
+    // Get your token from https://cesium.com/ion/tokens
+    Cesium.Ion.defaultAccessToken = 'your_token_here';
+    const viewer = new Cesium.Viewer('cesiumContainer');
+  </script>
+</body>
+</html>
