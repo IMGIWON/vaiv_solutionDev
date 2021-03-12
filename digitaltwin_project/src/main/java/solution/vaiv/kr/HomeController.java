@@ -11,14 +11,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-/**
- * Handles requests for the application home page.
- */
 @Controller
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
+	// 은영
 	@RequestMapping(value = "/eunhyeong", method = RequestMethod.GET)
 	public String eunhyeongHome(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
@@ -32,6 +30,8 @@ public class HomeController {
 		
 		return "eunhyeong/home";
 	}
+	
+	// 기원
 	@RequestMapping(value = "/giwon", method = RequestMethod.GET)
 	public String giwonHome(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
@@ -45,6 +45,8 @@ public class HomeController {
 		
 		return "giwon/home";
 	}
+	
+	// 종우
 	@RequestMapping(value = "/jongwoo", method = RequestMethod.GET)
 	public String jongwooHome(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
@@ -58,6 +60,8 @@ public class HomeController {
 		
 		return "jongwoo/home";
 	}
+	
+	// 우현
 	@RequestMapping(value = "/woohyun", method = RequestMethod.GET)
 	public String woohyunHome(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
@@ -71,6 +75,8 @@ public class HomeController {
 		
 		return "woohyun/home";
 	}
+	
+	// 예슬
 	@RequestMapping(value = "/yeseul", method = RequestMethod.GET)
 	public String yeseulHome(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
