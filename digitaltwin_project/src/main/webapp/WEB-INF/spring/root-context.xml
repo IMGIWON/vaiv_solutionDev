@@ -27,8 +27,8 @@
     </bean>
 	
 	<!-- Mapper -->
-    <bean id="BoardMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="solution.mapper.BoardMapper" />
+    <bean id="FirstMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="solution.first.mapper.FirstMapper" />
         <property name="sqlSessionFactory" ref="sqlSessionFactory" />
     </bean>
  
